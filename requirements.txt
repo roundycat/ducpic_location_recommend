@@ -1,0 +1,9 @@
+google-genai
+requests
+pydantic>=2.0
+pydantic-settings>=2.0
+python-dotenv
+rich
+beautifulsoup4
+flask
+flask-cors

@@ -1,0 +1,859 @@
+{
+  "places": [
+    {
+      "place_name": "서후리숲",
+      "area_hint": "경기도 양평군",
+      "evidence_url": "https://gnews.gg.go.kr/news/news_detail.do?number=202311150938357686C049&s_code=C049&page=&SchYear=&SchMonth=",
+      "evidence_text": "이곳은 방탄소년단이 지난 2019년 시즌 그리팅 화보를 찍었던 장소여서 입소문이 난 곳이기도 합니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "잣나무숲",
+      "area_hint": "경기도 양평군",
+      "evidence_url": "https://gnews.gg.go.kr/news/news_detail.do?number=202311150938357686C049&s_code=C049&page=&SchYear=&SchMonth=",
+      "evidence_text": "숲 내부는 나무들의 수종에 따라 잣나무숲, 비밀의 숲, 단풍나무숲... 등으로 구성되어 있다고 합니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "비밀의 숲",
+      "area_hint": "경기도 양평군",
+      "evidence_url": "https://gnews.gg.go.kr/news/news_detail.do?number=202311150938357686C049&s_code=C049&page=&SchYear=&SchMonth=",
+      "evidence_text": "숲 내부는 나무들의 수종에 따라... 비밀의 숲... 등으로 구성되어 있다고 합니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "단풍나무숲",
+      "area_hint": "경기도 양평군",
+      "evidence_url": "https://gnews.gg.go.kr/news/news_detail.do?number=202311150938357686C049&s_code=C049&page=&SchYear=&SchMonth=",
+      "evidence_text": "숲 내부는 나무들의 수종에 따라... 단풍나무숲... 등으로 구성되어 있다고 합니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "메타세쿼이아숲",
+      "area_hint": "경기도 양평군",
+      "evidence_url": "https://gnews.gg.go.kr/news/news_detail.do?number=202311150938357686C049&s_code=C049&page=&SchYear=&SchMonth=",
+      "evidence_text": "숲 내부는 나무들의 수종에 따라... 메타세쿼이아숲... 등으로 구성되어 있다고 합니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "은행나무숲",
+      "area_hint": "경기도 양평군",
+      "evidence_url": "https://gnews.gg.go.kr/news/news_detail.do?number=202311150938357686C049&s_code=C049&page=&SchYear=&SchMonth=",
+      "evidence_text": "숲 내부는 나무들의 수종에 따라... 은행나무숲... 등으로 구성되어 있다고 합니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "층층나무숲",
+      "area_hint": "경기도 양평군",
+      "evidence_url": "https://gnews.gg.go.kr/news/news_detail.do?number=202311150938357686C049&s_code=C049&page=&SchYear=&SchMonth=",
+      "evidence_text": "숲 내부는 나무들의 수종에 따라... 층층나무숲... 등으로 구성되어 있다고 합니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "자작나무숲",
+      "area_hint": "경기도 양평군",
+      "evidence_url": "https://gnews.gg.go.kr/news/news_detail.do?number=202311150938357686C049&s_code=C049&page=&SchYear=&SchMonth=",
+      "evidence_text": "숲 내부는 나무들의 수종에 따라... 자작나무숲... 등으로 구성되어 있다고 합니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "철쭉나무 전망대",
+      "area_hint": "경기도 양평군",
+      "evidence_url": "https://gnews.gg.go.kr/news/news_detail.do?number=202311150938357686C049&s_code=C049&page=&SchYear=&SchMonth=",
+      "evidence_text": "숲 내부는 나무들의 수종에 따라... 철쭉나무 전망대로 구성되어 있다고 합니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "일영역",
+      "area_hint": "경기도",
+      "evidence_url": "https://gnews.gg.go.kr/news/news_detail.do?number=201902121008451629C049&s_code=C049",
+      "evidence_text": "방탄소년단 ‘봄날’ 뮤직비디오 촬영지 ‘일영역’ 등이 선정됐다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "알라딘 중고매장 수원점",
+      "area_hint": "경기도 수원시 팔달구",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "[NFC] 방탄소년단 - 2025 ... 주소 : 경기도 수원시 팔달구 덕영대로 925 지하 1층 (매산로1가)",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "애플뮤직 수원점",
+      "area_hint": "경기도 수원시 권선구",
+      "evidence_url": "https://www.applemusic.co.kr/m/product.html?branduid=3367788&search=&xcode=009&mcode=010&scode=001&special=7&GfDT=aWh3VA%3D%3D",
+      "evidence_text": "가수명 Agust D (방탄소년단 슈가,BTS SUGA)... 수원점 경기도 수원시 권선구 서둔동 296-3 롯데몰 수원점 3층",
+      "category_hint": "음반매장"
+    },
+    {
+      "place_name": "롯데몰 수원점",
+      "area_hint": "경기도 수원시 권선구",
+      "evidence_url": "https://www.applemusic.co.kr/m/product.html?branduid=3367788&search=&xcode=009&mcode=010&scode=001&special=7&GfDT=aWh3VA%3D%3D",
+      "evidence_text": "수원점 경기도 수원시 권선구 서둔동 296-3 롯데몰 수원점 3층",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "애플뮤직 신촌점",
+      "area_hint": "서울 서대문구",
+      "evidence_url": "https://www.applemusic.co.kr/m/product.html?branduid=3367788&search=&xcode=009&mcode=010&scode=001&special=7&GfDT=aWh3VA%3D%3D",
+      "evidence_text": "신촌점 서울 서대문구 연세로 13 현대백화점 신촌점 유플렉스 지하2층",
+      "category_hint": "음반매장"
+    },
+    {
+      "place_name": "현대백화점 신촌점",
+      "area_hint": "서울 서대문구",
+      "evidence_url": "https://www.applemusic.co.kr/m/product.html?branduid=3367788&search=&xcode=009&mcode=010&scode=001&special=7&GfDT=aWh3VA%3D%3D",
+      "evidence_text": "신촌점 서울 서대문구 연세로 13 현대백화점 신촌점 유플렉스 지하2층",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "애플뮤직 용산점",
+      "area_hint": "서울 용산구",
+      "evidence_url": "https://www.applemusic.co.kr/m/product.html?branduid=3367788&search=&xcode=009&mcode=010&scode=001&special=7&GfDT=aWh3VA%3D%3D",
+      "evidence_text": "용산점 서울 용산구 한강로 3가 16-9 전자랜드 2층 261호",
+      "category_hint": "음반매장"
+    },
+    {
+      "place_name": "용산 전자랜드",
+      "area_hint": "서울 용산구",
+      "evidence_url": "https://www.applemusic.co.kr/m/product.html?branduid=3367788&search=&xcode=009&mcode=010&scode=001&special=7&GfDT=aWh3VA%3D%3D",
+      "evidence_text": "용산점 서울 용산구 한강로 3가 16-9 전자랜드 2층 261호",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "애플뮤직 건대점",
+      "area_hint": "서울특별시 광진구",
+      "evidence_url": "https://www.applemusic.co.kr/m/product.html?branduid=3367788&search=&xcode=009&mcode=010&scode=001&special=7&GfDT=aWh3VA%3D%3D",
+      "evidence_text": "건대점 서울특별시 광진구 아차산로 262 롯데백화점 스타시티점 지하 1층",
+      "category_hint": "음반매장"
+    },
+    {
+      "place_name": "롯데백화점 스타시티점",
+      "area_hint": "서울특별시 광진구",
+      "evidence_url": "https://www.applemusic.co.kr/m/product.html?branduid=3367788&search=&xcode=009&mcode=010&scode=001&special=7&GfDT=aWh3VA%3D%3D",
+      "evidence_text": "건대점 서울특별시 광진구 아차산로 262 롯데백화점 스타시티점 지하 1층",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "알라딘 중고매장 수원시청역점",
+      "area_hint": "경기도 수원시",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "수원시청역점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "알라딘 중고매장 분당서현점",
+      "area_hint": "경기도 성남시",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "분당서현점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "알라딘 중고매장 분당야탑점",
+      "area_hint": "경기도 성남시",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "분당야탑점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "알라딘 중고매장 동탄점",
+      "area_hint": "경기도 화성시",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "동탄점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "알라딘 중고매장 일산점",
+      "area_hint": "경기도 고양시",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "일산점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "알라딘 중고매장 산본점",
+      "area_hint": "경기도 군포시",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "산본점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "알라딘 중고매장 안산고잔점",
+      "area_hint": "경기도 안산시",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "안산고잔점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "알라딘 중고매장 평택점",
+      "area_hint": "경기도 평택시",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "평택점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "알라딘 중고매장 부천점",
+      "area_hint": "경기도 부천시",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "부천점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "알라딘 중고매장 화정점",
+      "area_hint": "경기도 고양시",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "화정점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "알라딘 중고매장 의정부홈플러스점",
+      "area_hint": "경기도 의정부시",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "의정부홈플러스점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "경기외국어고등학교",
+      "area_hint": "경기도 의왕시",
+      "evidence_url": "https://gggongik.or.kr/m/page/archive/archiveinfo_detail.html?board_idx=834",
+      "evidence_text": "경기외고 반크(VANK)... 방탄소년단의 6-25전쟁에 관한 메시지를 전달할 때도...",
+      "category_hint": "학교"
+    },
+    {
+      "place_name": "삼성전자 본사",
+      "area_hint": "경기도 수원시 영통구",
+      "evidence_url": "https://www.samsung.com/sec/explore/photography/with-galaxy/up-close-and-behind-the-scenes-with-bts/",
+      "evidence_text": "방탄소년단 슈가가 재해석한 \"Over the Horizon\"... 사업장주소 : 경기도 수원시 영통구 삼성로 129(매탄동).",
+      "category_hint": "기업"
+    },
+    {
+      "place_name": "라스베이거스",
+      "area_hint": "미국",
+      "evidence_url": "https://www.kyeonggi.com/article/20251027580164",
+      "evidence_text": "앞서 방탄소년단 멤버 7명이 모두 모였던 완전체 공연은 2022년 4월 라스베이거스가 마지막이었다.",
+      "category_hint": "해외도시"
+    },
+    {
+      "place_name": "미국 LA",
+      "area_hint": "미국",
+      "evidence_url": "https://www.bbc.com/korean/news-53981020",
+      "evidence_text": "지난달 30일 BTS는 미국 LA에서 열린 '2020 MTV 비디오 뮤직 어워즈(이하 VMA)'에서...",
+      "category_hint": "해외도시"
+    },
+    {
+      "place_name": "경기일보",
+      "area_hint": "경기도 수원시 장안구",
+      "evidence_url": "https://www.kyeonggi.com/article/20251027580164",
+      "evidence_text": "방탄소년단(BTS) 6년 군백기 깨고 컴백 시동... 본사 : 우)16303 경기도 수원시 장안구 경수대로 973번길 6",
+      "category_hint": "기업"
+    },
+    {
+      "place_name": "중부일보",
+      "area_hint": "경기도 수원시 팔달구",
+      "evidence_url": "https://www.joongboo.com/news/articleView.html?idxno=1238945",
+      "evidence_text": "방탄소년단 슈가-수란 열애설?... 주소 : 경기도 수원시 팔달구 권선로 733 (인계동) 중부일보",
+      "category_hint": "기업"
+    },
+    {
+      "place_name": "알라딘 중고매장 가로수길점",
+      "area_hint": "서울",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "가로수길점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "알라딘 중고매장 강남역7번출구점",
+      "area_hint": "서울",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "강남역7번출구점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "알라딘 중고매장 건대점",
+      "area_hint": "서울",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "건대점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "알라딘 중고매장 잠실롯데월드타워점",
+      "area_hint": "서울",
+      "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon",
+      "evidence_text": "잠실롯데월드타워점... [NFC] 방탄소년단 - 2025",
+      "category_hint": "서점"
+    },
+    {
+      "place_name": "고척스카이돔",
+      "area_hint": "서울 구로구",
+      "evidence_url": "https://applemusic.co.kr/m/product.html?branduid=3397966&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bGd3Ug%3D%3D",
+      "evidence_text": "방탄소년단의 글로벌 팬미팅 3rd MUSTER- ARMY.ZIP+ DVD 출시! 고척스카이돔을 가득 채운 3기 팬미팅 실황",
+      "category_hint": "공연장"
+    },
+    {
+      "place_name": "애플뮤직 신촌점",
+      "area_hint": "서울 서대문구",
+      "evidence_url": "https://applemusic.co.kr/m/product.html?branduid=3397966&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bGd3Ug%3D%3D",
+      "evidence_text": "방탄소년단 (BTS) - BTS 3rd MUSTER [ARMY.ZIP+] (3DISC)... STORE 신촌점 서울 서대문구 연세로 13 현대백화점 신촌점 유플렉스 지하2층",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "현대백화점 신촌점 유플렉스",
+      "area_hint": "서울 서대문구",
+      "evidence_url": "https://applemusic.co.kr/m/product.html?branduid=3397966&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bGd3Ug%3D%3D",
+      "evidence_text": "STORE 신촌점 서울 서대문구 연세로 13 현대백화점 신촌점 유플렉스 지하2층",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "애플뮤직 용산점",
+      "area_hint": "서울 용산구",
+      "evidence_url": "https://applemusic.co.kr/m/product.html?branduid=3397966&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bGd3Ug%3D%3D",
+      "evidence_text": "방탄소년단 (BTS) - BTS 3rd MUSTER... STORE 용산점 서울 용산구 한강로 3가 16-9 전자랜드 2층 261호",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "전자랜드",
+      "area_hint": "서울 용산구",
+      "evidence_url": "https://applemusic.co.kr/m/product.html?branduid=3397966&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bGd3Ug%3D%3D",
+      "evidence_text": "STORE 용산점 서울 용산구 한강로 3가 16-9 전자랜드 2층 261호",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "애플뮤직 건대점",
+      "area_hint": "서울 광진구",
+      "evidence_url": "https://applemusic.co.kr/m/product.html?branduid=3397966&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bGd3Ug%3D%3D",
+      "evidence_text": "방탄소년단 (BTS) - BTS 3rd MUSTER... STORE 건대점 서울특별시 광진구 아차산로 262 롯데백화점 스타시티점 지하 1층",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "롯데백화점 스타시티점",
+      "area_hint": "서울 광진구",
+      "evidence_url": "https://applemusic.co.kr/m/product.html?branduid=3397966&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bGd3Ug%3D%3D",
+      "evidence_text": "STORE 건대점 서울특별시 광진구 아차산로 262 롯데백화점 스타시티점 지하 1층",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "애플뮤직 수원점",
+      "area_hint": "경기 수원시",
+      "evidence_url": "https://applemusic.co.kr/m/product.html?branduid=3397966&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bGd3Ug%3D%3D",
+      "evidence_text": "방탄소년단 (BTS) - BTS 3rd MUSTER... STORE 수원점 경기도 수원시 권선구 서둔동 296-3 롯데몰 수원점 3층",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "롯데몰 수원점",
+      "area_hint": "경기 수원시",
+      "evidence_url": "https://applemusic.co.kr/m/product.html?branduid=3397966&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bGd3Ug%3D%3D",
+      "evidence_text": "STORE 수원점 경기도 수원시 권선구 서둔동 296-3 롯데몰 수원점 3층",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "애플뮤직 물류센터",
+      "area_hint": "경기 파주시",
+      "evidence_url": "https://applemusic.co.kr/m/product.html?branduid=3397966&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bGd3Ug%3D%3D",
+      "evidence_text": "반품주소안내 : 경기도 파주시 탄현면 문지리 185-1 애플뮤직 물류센터 (방탄소년단 DVD 판매 페이지 하단)",
+      "category_hint": "기타"
+    },
+    {
+      "place_name": "알 바이트 스타디움",
+      "area_hint": "카타르 알 코르",
+      "evidence_url": "https://www.football-asian.com/news/articleView.html?idxno=2893",
+      "evidence_text": "정국은 20일 월드컵 개막식이 열린 카타르 알 코르 알 바이트 스타디움에서... '드리머스'를 열창했다.",
+      "category_hint": "경기장"
+    },
+    {
+      "place_name": "알 코르",
+      "area_hint": "카타르",
+      "evidence_url": "https://www.football-asian.com/news/articleView.html?idxno=2893",
+      "evidence_text": "Jung Kook of BTS performs... at Al Bayt Stadium on November 20, 2022 in Al Khor, Qatar.",
+      "category_hint": "지역"
+    },
+    {
+      "place_name": "알 에글라 훈련장",
+      "area_hint": "카타르 도하",
+      "evidence_url": "https://www.football-asian.com/news/articleView.html?idxno=2893",
+      "evidence_text": "정국은 공연에 앞서... 도하 알 에글라 훈련장을 찾아 파울루 벤투 감독을 비롯한 코칭스태프와 손흥민 등 선수들을 만나 응원을 보냈다.",
+      "category_hint": "체육시설"
+    },
+    {
+      "place_name": "도하",
+      "area_hint": "카타르",
+      "evidence_url": "https://www.football-asian.com/news/articleView.html?idxno=2893",
+      "evidence_text": "그는 도하 알 에글라 훈련장을 찾아... 선수들을 만나 응원을 보냈다.",
+      "category_hint": "지역"
+    },
+    {
+      "place_name": "카타르",
+      "area_hint": "중동",
+      "evidence_url": "https://www.football-asian.com/news/articleView.html?idxno=2893",
+      "evidence_text": "방탄소년단(BTS) 정국이 부른 2022 국제축구연맹(FIFA) 카타르 월드컵 공식 주제가",
+      "category_hint": "국가"
+    },
+    {
+      "place_name": "미국",
+      "area_hint": "북미",
+      "evidence_url": "https://www.football-asian.com/news/articleView.html?idxno=2893",
+      "evidence_text": "미국, 영국, 일본, 프랑스 등 세계 102개국에서 1위에 올랐다.",
+      "category_hint": "국가"
+    },
+    {
+      "place_name": "영국",
+      "area_hint": "유럽",
+      "evidence_url": "https://www.football-asian.com/news/articleView.html?idxno=2893",
+      "evidence_text": "미국, 영국, 일본, 프랑스 등 세계 102개국에서 1위에 올랐다.",
+      "category_hint": "국가"
+    },
+    {
+      "place_name": "일본",
+      "area_hint": "아시아",
+      "evidence_url": "https://www.football-asian.com/news/articleView.html?idxno=2893",
+      "evidence_text": "미국, 영국, 일본, 프랑스 등 세계 102개국에서 1위에 올랐다.",
+      "category_hint": "국가"
+    },
+    {
+      "place_name": "프랑스",
+      "area_hint": "유럽",
+      "evidence_url": "https://www.football-asian.com/news/articleView.html?idxno=2893",
+      "evidence_text": "미국, 영국, 일본, 프랑스 등 세계 102개국에서 1위에 올랐다.",
+      "category_hint": "국가"
+    },
+    {
+      "place_name": "롯데몰 수원점",
+      "area_hint": "경기 수원시",
+      "evidence_url": "http://www.applemusic.co.kr/m/product.html?branduid=3396780&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bmp0W1k%3D",
+      "evidence_text": "가수명 방탄소년단 (BTS)... 경기도 수원시 권선구 서둔동 296-3 롯데몰 수원점 3층",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "애플뮤직 수원점",
+      "area_hint": "경기 수원시",
+      "evidence_url": "http://www.applemusic.co.kr/m/product.html?branduid=3396780&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bmp0W1k%3D",
+      "evidence_text": "방탄소년단 (BTS) - YOUTH... STORE 수원점 경기도 수원시 권선구 서둔동 296-3 롯데몰 수원점 3층",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "현대백화점 신촌점",
+      "area_hint": "서울 서대문구",
+      "evidence_url": "http://www.applemusic.co.kr/m/product.html?branduid=3396780&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bmp0W1k%3D",
+      "evidence_text": "방탄소년단 (BTS) - YOUTH... STORE 신촌점 서울 서대문구 연세로 13 현대백화점 신촌점 유플렉스 지하2층",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "애플뮤직 신촌점",
+      "area_hint": "서울 서대문구",
+      "evidence_url": "http://www.applemusic.co.kr/m/product.html?branduid=3396780&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bmp0W1k%3D",
+      "evidence_text": "방탄소년단 (BTS) - YOUTH... STORE 신촌점... 현대백화점 신촌점 유플렉스 지하2층",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "전자랜드",
+      "area_hint": "서울 용산구",
+      "evidence_url": "http://www.applemusic.co.kr/m/product.html?branduid=3396780&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bmp0W1k%3D",
+      "evidence_text": "방탄소년단 (BTS) - YOUTH... STORE 용산점 서울 용산구 한강로 3가 16-9 전자랜드 2층 261호",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "롯데백화점 스타시티점",
+      "area_hint": "서울 광진구",
+      "evidence_url": "http://www.applemusic.co.kr/m/product.html?branduid=3396780&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bmp0W1k%3D",
+      "evidence_text": "방탄소년단 (BTS) - YOUTH... STORE 건대점 서울특별시 광진구 아차산로 262 롯데백화점 스타시티점 지하 1층",
+      "category_hint": "쇼핑몰"
+    },
+    {
+      "place_name": "서울대",
+      "area_hint": "서울 관악구",
+      "evidence_url": "https://xn--289ayklw940dtxgqjq5ie27f.com/product/%EC%A7%84%EB%A1%9C%EA%B5%90%EC%9C%A1%EA%B3%BC-%ED%86%B5%EC%9D%BC%EA%B5%90%EC%9C%A1%ED%8F%89%ED%99%94%ED%86%B5%EC%9D%BC%EA%B5%90%EC%9C%A1-%ED%99%9C%EB%8F%99-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%80%EC%9D%84-%EC%98%AE%EA%B2%A8%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4/24",
+      "evidence_text": "최근 방탄소년단을 탄생시킨 작곡가 방시혁의 서울대 졸업식 축사가 화제가 되었습니다.",
+      "category_hint": "대학교"
+    },
+    {
+      "place_name": "수원시청 대강당",
+      "area_hint": "경기 수원시",
+      "evidence_url": "http://www.kgmaeil.net/news/articleView.html?idxno=225373",
+      "evidence_text": "수원시가 10일 시청 대강당에서 연... 한국어 말하기대회... 방탄소년단은 저에게 큰 힘이었습니다.",
+      "category_hint": "공공기관"
+    },
+    {
+      "place_name": "수원시청",
+      "area_hint": "경기 수원시",
+      "evidence_url": "http://www.kgmaeil.net/news/articleView.html?idxno=225373",
+      "evidence_text": "수원시가 10일 시청 대강당에서 연... (방탄소년단 관련 발표)",
+      "category_hint": "공공기관"
+    },
+    {
+      "place_name": "제주도",
+      "area_hint": "제주",
+      "evidence_url": "http://www.joongboo.com/news/articleView.html?idxno=1079106",
+      "evidence_text": "'꽃놀이패' NOW 제주도 V LIVE 끝나고 셀카타임... '꽃놀이패' 멤버 방탄소년단 정국",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "일영역",
+      "area_hint": "경기 양주시",
+      "evidence_url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002511139",
+      "evidence_text": "방탄소년단 '봄날' 뮤직비디오 촬영지 '일영역' 등. 경기도가 외국인 관광객 유치를 위해...",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "경기도",
+      "area_hint": "경기",
+      "evidence_url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002511139",
+      "evidence_text": "방탄소년단 '봄날' 뮤직비디오 촬영지 '일영역' 등... 경기도 관광자원 중 일부다.",
+      "category_hint": "지역"
+    },
+    {
+      "place_name": "동해",
+      "area_hint": "강원",
+      "evidence_url": "https://www.gg.go.kr/myggd/vol152/sub2_5.html",
+      "evidence_text": "방탄소년단의 진이 팬들을 위해... '슈퍼참치' 챌린지 열풍... 슈퍼참치를 찾아 동해와 서해 바다를 찾아다닌다.",
+      "category_hint": "자연명소"
+    },
+    {
+      "place_name": "서해",
+      "area_hint": "경기/충청/전라",
+      "evidence_url": "https://www.gg.go.kr/myggd/vol152/sub2_5.html",
+      "evidence_text": "방탄소년단의 진이... 슈퍼참치를 찾아 동해와 서해 바다를 찾아다닌다.",
+      "category_hint": "자연명소"
+    },
+    {
+      "place_name": "에버랜드",
+      "area_hint": "용인시/처인구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "[Dynamite MV촬영지] 방탄소년단의 히트송 'Dynamite' MV 촬영지에서 인증샷을 남겨보세요! 어트랙션 주소:대한민국 경기도 용인시 처인구 포곡읍 에버랜드로 199",
+      "category_hint": "테마파크"
+    },
+    {
+      "place_name": "Dynamite MV 촬영지",
+      "area_hint": "용인시/처인구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "[Dynamite MV촬영지] 방탄소년단의 히트송 'Dynamite' MV 촬영지에서 인증샷을 남겨보세요!",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "포시즌스호텔",
+      "area_hint": "서울시/종로구",
+      "evidence_url": "http://www.snakorea.com/news/articleView.html?idxno=752068",
+      "evidence_text": "그룹 방탄소년단(BTS) RM이 24일 오후 서울 종로구 포시즌스호텔에서 열린 W korea 유방암 인식 향상 캠페인 18주년 기념행사에서 포즈를 취하고 있다.",
+      "category_hint": "호텔"
+    },
+    {
+      "place_name": "논산훈련소",
+      "area_hint": "충청남도/논산시",
+      "evidence_url": "http://www.snakorea.com/news/articleView.html?idxno=752068",
+      "evidence_text": "RM은 11일 멤버 뷔와 함께 논산훈련소에 입소한다.",
+      "category_hint": "군사시설"
+    },
+    {
+      "place_name": "수원시글로벌청소년드림센터",
+      "area_hint": "수원시/팔달구",
+      "evidence_url": "https://swglobalyouth.com/lmth/04_comm/comm_04.asp?idx=771&mode=view&page=43",
+      "evidence_text": "방탄소년단처럼 Dynamite 음악에 맞춰 아이돌 춤을 추고, 호일로 인체를 만들고 주제에 맞게 재미있는 작품을 구성했으며",
+      "category_hint": "문화센터"
+    },
+    {
+      "place_name": "성균관대학교 의과대학",
+      "area_hint": "수원시/장안구",
+      "evidence_url": "https://www.skkumed.ac.kr/community_news_w.asp?bcode=news&number=442",
+      "evidence_text": "성균관대학교 의과대학 대학원생 24명이 참여하였고, 지난 2023년 방탄소년단 의 RM 이 대한법의학회 에 쾌척한 기부금 중 일부로 발간되어",
+      "category_hint": "교육기관"
+    },
+    {
+      "place_name": "대한법의학회",
+      "area_hint": "서울시",
+      "evidence_url": "https://www.skkumed.ac.kr/community_news_w.asp?bcode=news&number=442",
+      "evidence_text": "지난 2023년 방탄소년단 의 RM 이 대한법의학회 에 쾌척한 기부금 중 일부로 발간되어",
+      "category_hint": "기관/단체"
+    },
+    {
+      "place_name": "tvN",
+      "area_hint": "서울시",
+      "evidence_url": "https://www.skkumed.ac.kr/community_news_w.asp?bcode=news&number=442",
+      "evidence_text": "방탄소년단 의 RM 은 tvN '알아두면 쓸데없는 신비한 인간 잡학사전 – 알쓸인잡' 에 함께 출연 한 법의학자 이호 교수와의 인연으로",
+      "category_hint": "방송국"
+    },
+    {
+      "place_name": "판다월드",
+      "area_hint": "용인시/처인구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "△ [판다월드] 동물들의 생태환경과 유사하게 자연 친화적으로 조성된 바오 패밀리가 살고 있는 판다월드!",
+      "category_hint": "테마파크"
+    },
+    {
+      "place_name": "T-Express",
+      "area_hint": "용인시/처인구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "△ [T 익스프레스] 시속 104km의 엄청난 속도, 낙하각 77도의 아찔함! 세계 최고의 우든코스터가 잊지 못 할 최고의 기억을 여러분께 선사합니다",
+      "category_hint": "어트랙션"
+    },
+    {
+      "place_name": "사파리 월드",
+      "area_hint": "용인시/처인구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "△ [사파리 월드] 더 가까이, 코앞에서 생생한 맹수를 만날 기회!",
+      "category_hint": "테마파크"
+    },
+    {
+      "place_name": "롤링 엑스 트레인",
+      "area_hint": "용인시/처인구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "에버랜드는 T-익스프레스, 롤링 엑스 트레인, 아마존 익스프레스 등 스릴 넘치는 어트랙션과...",
+      "category_hint": "어트랙션"
+    },
+    {
+      "place_name": "아마존 익스프레스",
+      "area_hint": "용인시/처인구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "에버랜드는 T-익스프레스, 롤링 엑스 트레인, 아마존 익스프레스 등 스릴 넘치는 어트랙션과...",
+      "category_hint": "어트랙션"
+    },
+    {
+      "place_name": "글로벌페어",
+      "area_hint": "용인시/처인구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "글로벌페어, 아메리칸 어드벤처, 매직랜드, 유러피안 어드벤처, 주토피아 5개 테마파크로 에버랜드를 즐겨보세요",
+      "category_hint": "테마파크"
+    },
+    {
+      "place_name": "아메리칸 어드벤처",
+      "area_hint": "용인시/처인구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "글로벌페어, 아메리칸 어드벤처, 매직랜드, 유러피안 어드벤처, 주토피아 5개 테마파크로 에버랜드를 즐겨보세요",
+      "category_hint": "테마파크"
+    },
+    {
+      "place_name": "매직랜드",
+      "area_hint": "용인시/처인구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "글로벌페어, 아메리칸 어드벤처, 매직랜드, 유러피안 어드벤처, 주토피아 5개 테마파크로 에버랜드를 즐겨보세요",
+      "category_hint": "테마파크"
+    },
+    {
+      "place_name": "유러피안 어드벤처",
+      "area_hint": "용인시/처인구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "글로벌페어, 아메리칸 어드벤처, 매직랜드, 유러피안 어드벤처, 주토피아 5개 테마파크로 에버랜드를 즐겨보세요",
+      "category_hint": "테마파크"
+    },
+    {
+      "place_name": "주토피아",
+      "area_hint": "용인시/처인구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "글로벌페어, 아메리칸 어드벤처, 매직랜드, 유러피안 어드벤처, 주토피아 5개 테마파크로 에버랜드를 즐겨보세요",
+      "category_hint": "테마파크"
+    },
+    {
+      "place_name": "판다지아",
+      "area_hint": "용인시/처인구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "사랑스러운 패밀리가 보여주는 마법같은 이야기를 인터랙티브 매직쇼와 함께 판다지아에서 체험해보세요!",
+      "category_hint": "테마파크"
+    },
+    {
+      "place_name": "한국민속촌",
+      "area_hint": "용인시/기흥구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "수원 날씨 | 어트랙션 추천 에버랜드 한국민속촌 수원화성 화성행궁 캐리비안베이",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "전통민속관",
+      "area_hint": "용인시/기흥구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "전통민속관 : 7개 전시관(1,100m², 200명 수용), 문화유산 860여점",
+      "category_hint": "박물관"
+    },
+    {
+      "place_name": "세계민속관",
+      "area_hint": "용인시/기흥구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "세계민속관 : 9개 전시관(1,700m², 200명 수용), 문화유산3,000여점",
+      "category_hint": "박물관"
+    },
+    {
+      "place_name": "옹기전시관",
+      "area_hint": "용인시/기흥구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "옹기전시관 : 1개 전시관(480m², 80명수용), 700여점.",
+      "category_hint": "박물관"
+    },
+    {
+      "place_name": "민속촌 메인 공연장",
+      "area_hint": "용인시/기흥구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "민속촌 메인 공연장(약 500여명 수용); 전통혼례식장(약 200여명 수용); 가족공원 공연장(약 200여명 수용).",
+      "category_hint": "공연장"
+    },
+    {
+      "place_name": "전통혼례식장",
+      "area_hint": "용인시/기흥구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "민속촌 메인 공연장(약 500여명 수용); 전통혼례식장(약 200여명 수용); 가족공원 공연장(약 200여명 수용).",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "가족공원 공연장",
+      "area_hint": "용인시/기흥구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "민속촌 메인 공연장(약 500여명 수용); 전통혼례식장(약 200여명 수용); 가족공원 공연장(약 200여명 수용).",
+      "category_hint": "공연장"
+    },
+    {
+      "place_name": "한국관",
+      "area_hint": "용인시/기흥구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "상가지역 한식점 : 한국관, 길목집.",
+      "category_hint": "식당"
+    },
+    {
+      "place_name": "길목집",
+      "area_hint": "용인시/기흥구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "상가지역 한식점 : 한국관, 길목집.",
+      "category_hint": "식당"
+    },
+    {
+      "place_name": "카페다락방",
+      "area_hint": "용인시/기흥구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "전통찻집 : 카페다락방, 민향, 한약방",
+      "category_hint": "카페"
+    },
+    {
+      "place_name": "민향",
+      "area_hint": "용인시/기흥구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "전통찻집 : 카페다락방, 민향, 한약방",
+      "category_hint": "카페"
+    },
+    {
+      "place_name": "레일로드",
+      "area_hint": "용인시/기흥구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "놀이마을 음식점 : 레일로드, 민속반점 등",
+      "category_hint": "식당"
+    },
+    {
+      "place_name": "민속반점",
+      "area_hint": "용인시/기흥구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "놀이마을 음식점 : 레일로드, 민속반점 등",
+      "category_hint": "식당"
+    },
+    {
+      "place_name": "수원화성",
+      "area_hint": "수원시/장안구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "수원 날씨 | 어트랙션 추천 에버랜드 한국민속촌 수원화성 화성행궁 캐리비안베이",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "화성행궁",
+      "area_hint": "수원시/팔달구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "화성행궁은 정조대왕이 현룡원을 참배할 때 임시 거처로 사용했던 궁궐입니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "방화수류각",
+      "area_hint": "수원시",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "또한, 주변 자연 환경과 완벽하게 어우러진 독특한 건축 양식을 가진 방화수류각(Fanghua Suiliu Pavilion)도 있습니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "공신돈",
+      "area_hint": "수원시",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "Kongxindun은 전쟁 중 관측소였으며, 지금은 역사를 탐험하기에 좋은 장소입니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "장안문",
+      "area_hint": "수원시",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "화성은 창경문, 화서문, 팔달문, 장안문의 네 문이 일렬로 서 있었습니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "팔달문",
+      "area_hint": "수원시",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "화성은 창경문, 화서문, 팔달문, 장안문의 네 문이 일렬로 서 있었습니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "화서문",
+      "area_hint": "수원시",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "화성은 창경문, 화서문, 팔달문, 장안문의 네 문이 일렬로 서 있었습니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "창경문",
+      "area_hint": "수원시",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "화성은 창경문, 화서문, 팔달문, 장안문의 네 문이 일렬로 서 있었습니다.",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "캐리비안베이",
+      "area_hint": "용인시/처인구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "수원 날씨 | 어트랙션 추천 에버랜드 한국민속촌 수원화성 화성행궁 캐리비안베이",
+      "category_hint": "워터파크"
+    },
+    {
+      "place_name": "수원남문시장",
+      "area_hint": "수원시",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "한국민속촌+수원화성+수원남문시장 일일 투어 (서울 출발)",
+      "category_hint": "시장"
+    },
+    {
+      "place_name": "광명동굴",
+      "area_hint": "광명시",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "수원 화성, 광명동굴 & 스타필드 도서관 투어",
+      "category_hint": "관광지"
+    },
+    {
+      "place_name": "스타필드 도서관",
+      "area_hint": "수원시",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "수원 화성, 광명동굴 & 스타필드 도서관 투어",
+      "category_hint": "문화시설"
+    },
+    {
+      "place_name": "서울랜드",
+      "area_hint": "과천시",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "2026 WORLD DJ FESTIVAL 어트랙션 주소:경기도 과천시 광명로 181(막계동) 서울랜드",
+      "category_hint": "테마파크"
+    },
+    {
+      "place_name": "수원역",
+      "area_hint": "수원시",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "서울에서 지하철 1호선을 타고 수원역까지 가서 버스로 환승하면 바로 갈 수 있어요.",
+      "category_hint": "교통"
+    },
+    {
+      "place_name": "수원월드컵경기장",
+      "area_hint": "수원시/팔달구",
+      "evidence_url": "https://www.joongang.co.kr/article/22962848",
+      "evidence_text": "한국이 11일 수원월드컵경기장에서 열린 FIFA 랭킹 12위 칠레와 평가전에서 대등한 경기를 펼쳤다.",
+      "category_hint": "경기장"
+    },
+    {
+      "place_name": "한 고등학교 교실",
+      "area_hint": "알 수 없음",
+      "evidence_url": "https://www.joongang.co.kr/article/22962848",
+      "evidence_text": "최근 한 고등학교 교실에 아이돌그룹 방탄소년단 뷔와 함께 손흥민과 이승우의 사진이 나란히 걸린 모습이 온라인 커뮤니티에 소개돼 눈길을 끌었다.",
+      "category_hint": "학교"
+    },
+    {
+      "place_name": "겨울 눈썰매장",
+      "area_hint": "용인시/기흥구",
+      "evidence_url": "https://kr.trip.com/blog/suwon-weather-tours-ko/",
+      "evidence_text": "아이들의 꿈이 자라는 놀이마을. 바이킹 외 놀이기구 14종; 겨울 눈썰매장.",
+      "category_hint": "체육시설"
+    }
+  ],
+  "sources_count": 25
+}

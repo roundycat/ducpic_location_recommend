@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <title>연예인 관련 장소 지도 (GPS 10km)</title>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    #map { height: 100%; width: 100%; }
+    .panel {
+      position: absolute; top: 12px; left: 12px; z-index: 5;
+      background: white; padding: 10px 12px; border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+      max-width: 520px; font-family: system-ui, sans-serif; font-size: 14px;
+    }
+    .panel small { color: #666; }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <div><b>연예인 관련 장소(근거 기반) - GPS 기준 10km 이내만</b></div>
+    <div><small>내 위치는 브라우저 권한이 허용되면 표시됩니다.</small></div>
+  </div>
+  <div id="map"></div>
+
+  <script>
+    const places = [{"place_id": "ChIJCd0gLClFezURhiQeXibB8BE", "name": "삼성전자㈜ 본사", "address": "대한민국 경기도 수원시 영통구 삼성로 129", "lat": 37.2558477, "lon": 127.0511335, "types": ["point_of_interest", "establishment"], "rating": 3.7, "user_ratings_total": 131, "evidence_url": "https://www.samsung.com/sec/explore/photography/with-galaxy/up-close-and-behind-the-scenes-with-bts/", "evidence_text": "방탄소년단 슈가가 재해석한 \"Over the Horizon\"... 사업장주소 : 경기도 수원시 영통구 삼성로 129(매탄동).", "area_hint": "경기도 수원시 영통구", "distance_km": 2.21}, {"place_id": "ChIJEXnaQ1dDezURrFGWqL7FdbE", "name": "알라딘 중고서점 수원시청역점", "address": "대한민국 경기도 수원시 팔달구 권광로 191 B1 KR", "lat": 37.264539, "lon": 127.03260479999999, "types": ["book_store", "point_of_interest", "store", "establishment"], "rating": 4.5, "user_ratings_total": 308, "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon", "evidence_text": "[NFC] 방탄소년단 - 2025 ... 주소 : 경기도 수원시 팔달구 덕영대로 925 지하 1층 (매산로1가)", "area_hint": "경기도 수원시 팔달구", "distance_km": 3.868}, {"place_id": "ChIJZVQxTQBDezURalqppxg99IM", "name": "중부일보", "address": "대한민국 경기도 수원시 팔달구 권선로 733", "lat": 37.2582409, "lon": 127.0317564, "types": ["point_of_interest", "establishment"], "rating": 4, "user_ratings_total": 4, "evidence_url": "https://www.joongboo.com/news/articleView.html?idxno=1238945", "evidence_text": "방탄소년단 슈가-수란 열애설?... 주소 : 경기도 수원시 팔달구 권선로 733 (인계동) 중부일보", "area_hint": "경기도 수원시 팔달구", "distance_km": 3.896}, {"place_id": "ChIJ5cMasFtDezUR2EpwyZsXk88", "name": "인생뮤직 수원점", "address": "대한민국 수원시 팔달구 인계동 1037-6번지 4층 수원시 경기도 KR", "lat": 37.266309799999995, "lon": 127.03268879999999, "types": ["point_of_interest", "establishment"], "rating": 5, "user_ratings_total": 1, "evidence_url": "http://www.applemusic.co.kr/m/product.html?branduid=3396780&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bmp0W1k%3D", "evidence_text": "방탄소년단 (BTS) - YOUTH... STORE 수원점 경기도 수원시 권선구 서둔동 296-3 롯데몰 수원점 3층", "area_hint": "경기 수원시", "distance_km": 3.896}, {"place_id": "ChIJD-a2EDtDezURNFFoAntmb7o", "name": "경기도청", "address": "대한민국 경기도 수원시 영통구 도청로 30", "lat": 37.2893482, "lon": 127.05351019999999, "types": ["government_office", "point_of_interest", "establishment"], "rating": 4.3, "user_ratings_total": 57, "evidence_url": "http://www.kgmaeil.net/news/articleView.html?idxno=225373", "evidence_text": "수원시가 10일 시청 대강당에서 연... (방탄소년단 관련 발표)", "area_hint": "경기 수원시", "distance_km": 3.9}, {"place_id": "ChIJfbYc2kJDezUReaTMhziaPtg", "name": "수원시청", "address": "대한민국 경기도 수원시 팔달구 효원로 241", "lat": 37.263448499999996, "lon": 127.02864269999999, "types": ["city_hall", "local_government_office", "government_office", "point_of_interest", "establishment"], "rating": 4.2, "user_ratings_total": 187, "evidence_url": "http://www.kgmaeil.net/news/articleView.html?idxno=225373", "evidence_text": "수원시가 10일 시청 대강당에서 연... 한국어 말하기대회... 방탄소년단은 저에게 큰 힘이었습니다.", "area_hint": "경기 수원시", "distance_km": 4.199}, {"place_id": "ChIJMw6htcFDezURXClqMliJNs0", "name": "애플 A-STORE 이마트 수원점(Apple authorized reseller)", "address": "대한민국 경기도 수원시 경수대로 270 이마트 수원점 2층 일렉트로마트 A STORE", "lat": 37.2499043, "lon": 127.021753, "types": ["electronics_store", "store", "point_of_interest", "establishment"], "rating": null, "user_ratings_total": null, "evidence_url": "https://www.applemusic.co.kr/m/product.html?branduid=3367788&search=&xcode=009&mcode=010&scode=001&special=7&GfDT=aWh3VA%3D%3D", "evidence_text": "가수명 Agust D (방탄소년단 슈가,BTS SUGA)... 수원점 경기도 수원시 권선구 서둔동 296-3 롯데몰 수원점 3층", "area_hint": "경기도 수원시 권선구", "distance_km": 4.888}, {"place_id": "ChIJXb_mpztEezURakUKasbrHU4", "name": "알라딘 중고서점 동탄점", "address": "대한민국 경기도 화성시 동탄중앙로 200 KR", "lat": 37.2042237, "lon": 127.06879140000001, "types": ["book_store", "store", "point_of_interest", "establishment"], "rating": 4.4, "user_ratings_total": 1158, "evidence_url": "http://www8.aladin.co.kr/m/off/main.aspx?offcode=Suwon", "evidence_text": "동탄점... [NFC] 방탄소년단 - 2025", "area_hint": "경기도 화성시", "distance_km": 6.13}, {"place_id": "ChIJ9w7MnpxFezURcdovlr2fXF4", "name": "한백고등학교", "address": "대한민국 경기도 화성시 동탄순환대로26길 21", "lat": 37.2076023, "lon": 127.1135477, "types": ["secondary_school", "school", "point_of_interest", "establishment"], "rating": null, "user_ratings_total": null, "evidence_url": "https://www.joongang.co.kr/article/22962848", "evidence_text": "최근 한 고등학교 교실에 아이돌그룹 방탄소년단 뷔와 함께 손흥민과 이승우의 사진이 나란히 걸린 모습이 온라인 커뮤니티에 소개돼 눈길을 끌었다.", "area_hint": "알 수 없음", "distance_km": 6.629}, {"place_id": "ChIJN4VUWi5DezURrKFH0F1dAn8", "name": "글로벌청소년드림센터", "address": "대한민국 수원시", "lat": 37.282033, "lon": 127.00562300000001, "types": ["bus_stop", "transit_station", "point_of_interest", "establishment"], "rating": null, "user_ratings_total": null, "evidence_url": "https://swglobalyouth.com/lmth/04_comm/comm_04.asp?idx=771&mode=view&page=43", "evidence_text": "방탄소년단처럼 Dynamite 음악에 맞춰 아이돌 춤을 추고, 호일로 인체를 만들고 주제에 맞게 재미있는 작품을 구성했으며", "area_hint": "수원시/팔달구", "distance_km": 6.711}, {"place_id": "ChIJ6wpkWR1DezURy7WoLrzgmJM", "name": "타임빌라스 수원", "address": "대한민국 경기도 수원시 권선구 세화로 134", "lat": 37.2640396, "lon": 126.99708389999999, "types": ["shopping_mall", "point_of_interest", "establishment"], "rating": 4.2, "user_ratings_total": 10360, "evidence_url": "http://www.applemusic.co.kr/m/product.html?branduid=3396780&search=&xcode=009&mcode=001&scode=001&special=5&GfDT=bmp0W1k%3D", "evidence_text": "가수명 방탄소년단 (BTS)... 경기도 수원시 권선구 서둔동 296-3 롯데몰 수원점 3층", "area_hint": "경기 수원시", "distance_km": 6.985}, {"place_id": "ChIJfUzVh-9dezUReA100HJ155o", "name": "경기일보", "address": "대한민국 경기도 수원시 장안구 경수대로973번길 6", "lat": 37.3041961, "lon": 127.00401339999999, "types": ["point_of_interest", "establishment"], "rating": 3.3, "user_ratings_total": 6, "evidence_url": "https://www.kyeonggi.com/article/20251027580164", "evidence_text": "방탄소년단(BTS) 6년 군백기 깨고 컴백 시동... 본사 : 우)16303 경기도 수원시 장안구 경수대로 973번길 6", "area_hint": "경기도 수원시 장안구", "distance_km": 8.092}];
+
+    function initMap() {
+      const center = { lat: 37.25907308271906, lng: 127.07576805952787 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 13,
+        center
+      });
+
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((pos) => {
+          const me = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+          new google.maps.Marker({
+            position: me,
+            map,
+            title: "내 현재 위치"
+          });
+        });
+      }
+
+      places.forEach((p) => {
+        const m = new google.maps.Marker({
+          position: { lat: p.lat, lng: p.lon },
+          map,
+          title: p.name
+        });
+
+        const content = `
+          <div style="max-width:420px;">
+            <div style="font-weight:700;">${p.name}</div>
+            <div>${p.address || ""}</div>
+            <div style="margin-top:6px;"><b>거리</b>: ${(p.distance_km ?? "").toString()} km</div>
+            <div style="margin-top:6px;"><b>근거</b>: ${p.evidence_text || ""}</div>
+            <div style="margin-top:6px;">
+              <a href="${p.evidence_url}" target="_blank">출처 열기</a>
+            </div>
+          </div>
+        `;
+        const iw = new google.maps.InfoWindow({ content });
+        m.addListener("click", () => iw.open(map, m));
+      });
+    }
+  </script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8zl18RadZVDuQgQz6RfBjv7oL89wtOls&callback=initMap">
+  </script>
+</body>
+</html>

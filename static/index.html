@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>근방 여행지 추천</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+            flex: 1;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error {
+            background: #fee;
+            color: #c33;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #c33;
+        }
+
+        .success {
+            background: #efe;
+            color: #3c3;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3c3;
+        }
+
+        .results {
+            margin-top: 30px;
+        }
+
+        .result-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+        }
+
+        .result-item:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 10px;
+        }
+
+        .result-rank {
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .result-name {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #333;
+            flex: 1;
+            margin-left: 15px;
+        }
+
+        .result-info {
+            color: #666;
+            font-size: 0.9em;
+            margin: 8px 0;
+        }
+
+        .result-reason {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 10px;
+            color: #555;
+            font-style: italic;
+        }
+
+        .result-distance {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .map-container {
+            margin-top: 30px;
+            height: 500px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        .location-status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .location-status.success {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .location-status.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗺️ 근방 여행지 추천</h1>
+            <p>Gemini AI와 Google Places API를 활용한 맞춤형 장소 추천</p>
+        </div>
+
+        <div class="card">
+            <form id="recommendForm">
+                <div class="form-group">
+                    <label>위치 설정</label>
+                    <div class="location-status" id="locationStatus">
+                        <span>📍 위치를 설정해주세요</span>
+                    </div>
+                    <div class="button-group">
+                        <button type="button" class="btn-secondary" id="autoLocationBtn">자동 위치 파악 (IP 기반)</button>
+                        <button type="button" class="btn-secondary" id="gpsLocationBtn">GPS 위치 사용</button>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="lat">위도 (Latitude)</label>
+                        <input type="number" id="lat" step="any" placeholder="예: 37.5665" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lon">경도 (Longitude)</label>
+                        <input type="number" id="lon" step="any" placeholder="예: 126.9780" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="celebrityMode" style="margin-right: 8px;">
+                        연예인 검색 모드 (웹 검색 기반, 더 정확하지만 시간이 걸립니다)
+                    </label>
+                    <small style="color: #666; display: block; margin-top: 5px; margin-left: 24px;">
+                        체크하면 실제로 연예인이 방문한 장소를 웹에서 검색합니다. CSE API 키가 필요합니다.
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="prompt">원하는 조건/취향 프롬프트</label>
+                    <textarea id="prompt" rows="3" placeholder="예: 조용한 카페, 예술 작품이 있는 박물관, 산책하기 좋은 공원&#10;또는: 세븐틴이 방문한 감성 공간" required></textarea>
+                    <small style="color: #666; display: block; margin-top: 5px;">
+                        💡 연예인 검색 모드: "세븐틴 방문", "BTS 다녀온" 등으로 검색하면 실제 방문 장소를 찾습니다.
+                    </small>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="radius_m">검색 반경 (미터)</label>
+                        <input type="number" id="radius_m" value="2000" min="200" max="50000" step="100">
+                        <small style="color: #666; display: block; margin-top: 5px;" id="radiusHint">
+                            일반 모드: 2km 권장
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="k">추천 개수</label>
+                        <input type="number" id="k" value="5" min="1" max="20">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="max_candidates">후보 개수 상한 (최대 20개)</label>
+                    <input type="number" id="max_candidates" value="20" min="1" max="20">
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn-primary" id="submitBtn">추천 받기</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="loading" class="card loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>AI가 최적의 장소를 찾고 있습니다...</p>
+        </div>
+
+        <div id="error" class="card error" style="display: none;"></div>
+
+        <div id="results" class="results" style="display: none;">
+            <div class="card">
+                <h2 style="margin-bottom: 20px;">추천 결과</h2>
+                <div id="resultsList"></div>
+            </div>
+            <div class="card">
+                <h2 style="margin-bottom: 20px;">지도</h2>
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let map;
+        let markers = [];
+        let googleMapsApiKey = '';
+
+        // 페이지 로드 시 API 키 가져오기
+        (async function() {
+            try {
+                const response = await fetch('/api/config');
+                const config = await response.json();
+                googleMapsApiKey = config.google_maps_api_key;
+                
+                if (googleMapsApiKey) {
+                    // Google Maps 스크립트 동적 로드
+                    const script = document.createElement('script');
+                    script.src = `https://maps.googleapis.com/maps/api/js?key=${googleMapsApiKey}`;
+                    script.async = true;
+                    script.defer = true;
+                    document.body.appendChild(script);
+                } else {
+                    console.error('Google Maps API 키가 설정되지 않았습니다.');
+                    document.getElementById('error').textContent = 'Google Maps API 키가 설정되지 않았습니다. .env 파일에 GOOGLE_MAPS_API_KEY를 추가해주세요.';
+                    document.getElementById('error').style.display = 'block';
+                }
+            } catch (error) {
+                console.error('설정을 가져오는 중 오류 발생:', error);
+            }
+        })();
+
+        // 자동 위치 파악
+        document.getElementById('autoLocationBtn').addEventListener('click', async () => {
+            const statusEl = document.getElementById('locationStatus');
+            statusEl.innerHTML = '<span>⏳ 위치를 파악하는 중...</span>';
+            statusEl.className = 'location-status';
+
+            try {
+                const response = await fetch('/api/location/auto');
+                const data = await response.json();
+
+                if (data.success) {
+                    document.getElementById('lat').value = data.lat;
+                    document.getElementById('lon').value = data.lon;
+                    statusEl.innerHTML = `<span>✅ 위치 파악 완료: ${data.meta.city || ''} ${data.meta.region || ''}</span>`;
+                    statusEl.className = 'location-status success';
+                } else {
+                    statusEl.innerHTML = `<span>❌ 위치 파악 실패: ${data.error}</span>`;
+                    statusEl.className = 'location-status error';
+                }
+            } catch (error) {
+                statusEl.innerHTML = `<span>❌ 오류 발생: ${error.message}</span>`;
+                statusEl.className = 'location-status error';
+            }
+        });
+
+        // 연예인 검색 모드 체크박스 변경 시
+        document.getElementById('celebrityMode').addEventListener('change', (e) => {
+            const radiusInput = document.getElementById('radius_m');
+            const radiusHint = document.getElementById('radiusHint');
+            if (e.target.checked) {
+                // 연예인 검색 모드: 기본값을 20km로 설정
+                radiusInput.value = '20000';
+                radiusHint.textContent = '연예인 검색 모드: 20km 권장 (더 넓은 범위에서 검색)';
+            } else {
+                // 일반 모드: 기본값 2km
+                radiusInput.value = '2000';
+                radiusHint.textContent = '일반 모드: 2km 권장';
+            }
+        });
+
+        // GPS 위치 사용
+        document.getElementById('gpsLocationBtn').addEventListener('click', () => {
+            const statusEl = document.getElementById('locationStatus');
+            statusEl.innerHTML = '<span>⏳ GPS 위치를 요청하는 중...</span>';
+            statusEl.className = 'location-status';
+
+            if (!navigator.geolocation) {
+                statusEl.innerHTML = '<span>❌ 이 브라우저는 GPS를 지원하지 않습니다.</span>';
+                statusEl.className = 'location-status error';
+                return;
+            }
+
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+                    document.getElementById('lat').value = lat;
+                    document.getElementById('lon').value = lon;
+                    statusEl.innerHTML = `<span>✅ GPS 위치 설정 완료</span>`;
+                    statusEl.className = 'location-status success';
+                },
+                (error) => {
+                    statusEl.innerHTML = `<span>❌ GPS 오류: ${error.message}</span>`;
+                    statusEl.className = 'location-status error';
+                },
+                {
+                    enableHighAccuracy: true,
+                    timeout: 15000,
+                    maximumAge: 0
+                }
+            );
+        });
+
+        // 폼 제출
+        document.getElementById('recommendForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const loadingEl = document.getElementById('loading');
+            const errorEl = document.getElementById('error');
+            const resultsEl = document.getElementById('results');
+            const submitBtn = document.getElementById('submitBtn');
+
+            // 초기화
+            errorEl.style.display = 'none';
+            resultsEl.style.display = 'none';
+            loadingEl.style.display = 'block';
+            submitBtn.disabled = true;
+
+            const isCelebrityMode = document.getElementById('celebrityMode').checked;
+            const endpoint = isCelebrityMode ? '/api/recommend-celebrity' : '/api/recommend';
+            
+            const data = {
+                prompt: document.getElementById('prompt').value,
+                lat: parseFloat(document.getElementById('lat').value),
+                lon: parseFloat(document.getElementById('lon').value),
+            };
+
+            if (!isCelebrityMode) {
+                data.radius_m = parseInt(document.getElementById('radius_m').value);
+                data.k = parseInt(document.getElementById('k').value);
+                data.max_candidates = parseInt(document.getElementById('max_candidates').value);
+            } else {
+                // 연예인 검색 모드: 기본값을 20km로 설정 (20000m)
+                const radiusM = parseInt(document.getElementById('radius_m').value) || 20000;
+                data.max_distance_km = radiusM / 1000; // 미터를 km로 변환
+            }
+
+            try {
+                const response = await fetch(endpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    displayResults(result);
+                } else {
+                    showError(result.error || '알 수 없는 오류가 발생했습니다.');
+                }
+            } catch (error) {
+                showError(`요청 실패: ${error.message}`);
+            } finally {
+                loadingEl.style.display = 'none';
+                submitBtn.disabled = false;
+            }
+        });
+
+        function showError(message) {
+            const errorEl = document.getElementById('error');
+            errorEl.textContent = message;
+            errorEl.style.display = 'block';
+        }
+
+        function displayResults(result) {
+            const resultsEl = document.getElementById('results');
+            const resultsListEl = document.getElementById('resultsList');
+
+            // 결과 목록 표시
+            resultsListEl.innerHTML = '';
+            result.recommendations.forEach((item, index) => {
+                const itemEl = document.createElement('div');
+                itemEl.className = 'result-item';
+                const rank = item.rank || (index + 1);
+                const evidenceText = item.evidence_text || item.reason || '';
+                const evidenceUrl = item.evidence_url || '';
+                
+                const distanceText = item.distance_km !== null && item.distance_km !== undefined 
+                    ? `📍 ${item.distance_km.toFixed(2)} km` 
+                    : '📍 위치 정보 없음 (지오코딩 실패)';
+                const geocodeFailedNote = item.geocode_failed ? '<div style="color: #ff6b6b; font-size: 12px; margin-top: 4px;">⚠️ 정확한 위치를 찾지 못했습니다</div>' : '';
+                
+                itemEl.innerHTML = `
+                    <div class="result-header">
+                        <div class="result-rank">${rank}</div>
+                        <div class="result-name">${item.name}</div>
+                    </div>
+                    <div class="result-info">
+                        <span class="result-distance">${distanceText}</span>
+                        ${item.rating ? ` | ⭐ ${item.rating} (${item.user_ratings_total || 0}개 리뷰)` : ''}
+                    </div>
+                    ${item.address ? `<div class="result-info">📍 ${item.address}</div>` : ''}
+                    ${evidenceText ? `<div class="result-reason">💡 ${evidenceText}</div>` : ''}
+                    ${geocodeFailedNote}
+                    ${evidenceUrl ? `<div class="result-info" style="margin-top: 8px;"><a href="${evidenceUrl}" target="_blank" style="color: #667eea; text-decoration: none;">📎 출처 보기</a></div>` : ''}
+                `;
+                resultsListEl.appendChild(itemEl);
+            });
+
+            resultsEl.style.display = 'block';
+
+            // 지도 표시
+            initMap(result.user_location.lat, result.user_location.lon, result.recommendations);
+        }
+
+        function initMap(centerLat, centerLon, places) {
+            // Google Maps가 로드되었는지 확인
+            if (typeof google === 'undefined' || typeof google.maps === 'undefined') {
+                console.error('Google Maps가 아직 로드되지 않았습니다.');
+                setTimeout(() => initMap(centerLat, centerLon, places), 500);
+                return;
+            }
+
+            // 기존 마커 제거
+            markers.forEach(marker => marker.setMap(null));
+            markers = [];
+
+            // 지도 초기화
+            if (!map) {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 13,
+                    center: { lat: centerLat, lng: centerLon }
+                });
+            } else {
+                map.setCenter({ lat: centerLat, lng: centerLon });
+            }
+
+            // 사용자 위치 마커
+            const userMarker = new google.maps.Marker({
+                position: { lat: centerLat, lng: centerLon },
+                map: map,
+                title: '내 위치',
+                icon: {
+                    path: google.maps.SymbolPath.CIRCLE,
+                    scale: 8,
+                    fillColor: '#4285F4',
+                    fillOpacity: 1,
+                    strokeColor: '#ffffff',
+                    strokeWeight: 2
+                }
+            });
+            markers.push(userMarker);
+
+            // 추천 장소 마커 (좌표가 있는 것만)
+            places.forEach((place, index) => {
+                // 지오코딩 실패한 장소는 지도에 표시하지 않음
+                if (place.lat === null || place.lat === undefined || place.lon === null || place.lon === undefined) {
+                    return;
+                }
+                
+                const marker = new google.maps.Marker({
+                    position: { lat: place.lat, lng: place.lon },
+                    map: map,
+                    title: place.name,
+                    label: {
+                        text: `${place.rank || (index + 1)}`,
+                        color: 'white',
+                        fontWeight: 'bold'
+                    }
+                });
+
+                const distanceText = place.distance_km !== null && place.distance_km !== undefined 
+                    ? `${place.distance_km.toFixed(2)} km` 
+                    : '위치 정보 없음';
+                const content = `
+                    <div style="max-width:300px; padding:10px;">
+                        <div style="font-weight:700; font-size:16px; margin-bottom:8px;">${place.name}</div>
+                        ${place.address ? `<div style="color:#666; margin-bottom:6px;">${place.address}</div>` : ''}
+                        <div style="margin-bottom:6px;"><b>거리</b>: ${distanceText}</div>
+                        ${place.rating ? `<div style="margin-bottom:6px;"><b>평점</b>: ⭐ ${place.rating} (${place.user_ratings_total || 0}개 리뷰)</div>` : ''}
+                        ${place.evidence_text ? `<div style="margin-top:8px; padding:8px; background:#f8f9fa; border-radius:6px; font-style:italic; color:#555;">${place.evidence_text}</div>` : ''}
+                        ${place.reason ? `<div style="margin-top:8px; padding:8px; background:#f8f9fa; border-radius:6px; font-style:italic; color:#555;">${place.reason}</div>` : ''}
+                    </div>
+                `;
+
+                const infoWindow = new google.maps.InfoWindow({ content });
+                marker.addListener('click', () => {
+                    infoWindow.open(map, marker);
+                });
+
+                markers.push(marker);
+            });
+        }
+    </script>
+
+</body>
+</html>
+
